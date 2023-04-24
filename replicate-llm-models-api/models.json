@@ -1,0 +1,32 @@
+{
+  "dolly-v2-12b":{
+    "id":"replicate/dolly-v2-12b:ef0e1aefc61f8e096ebe4db6b2bacc297daf2ef6899f0f7e001ec445893500e5",
+    "split":true,
+    "info": "https://replicate.com/replicate/dolly-v2-12b"
+  },
+  "stablelm-tuned-alpha-7b":{
+    "id":"stability-ai/stablelm-tuned-alpha-7b:4a9a32b4fd86c2d047f1d271fa93972683ec6ef1cf82f402bd021f267330b50b",
+    "split":false,
+    "info": "https://replicate.com/stability-ai/stablelm-tuned-alpha-7b"
+  },
+  "flan-t5-xl":{
+    "id":"replicate/flan-t5-xl:eec2f71c986dfa3b7a5d842d22e1130550f015720966bec48beaae059b19ef4c",
+    "split":true,
+    "info": "https://replicate.com/replicate/flan-t5-xl"
+  },
+  "llama-7b":{
+    "id":"replicate/llama-7b:2014ee1247354f2e81c0b3650d71ca715bc1e610189855f134c30ecb841fae21",
+    "split":true,
+    "info": "https://replicate.com/replicate/llama-7b"
+  },
+  "oasst-sft-1-pythia-12b":{
+    "id":"replicate/oasst-sft-1-pythia-12b:28d1875590308642710f46489b97632c0df55adb5078d43064e1dc0bf68117c3",
+    "split":true,
+    "info": "https://replicate.com/replicate/oasst-sft-1-pythia-12b"
+  },
+  "gpt-j-6b":{
+    "id":"replicate/gpt-j-6b:b3546aeec6c9891f0dd9929c2d3bedbf013c12e02e7dd0346af09c37e008c827",
+    "split":true,
+    "info": "https://replicate.com/replicate/gpt-j-6b"
+  }
+}

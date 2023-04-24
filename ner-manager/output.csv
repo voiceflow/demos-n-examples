@@ -1,0 +1,11 @@
+quote,I need an insurance quote
+welcome,Hi
+welcome,Hi there!
+book,I want to order {number} pizzas
+book,I want to book a table for {number} people
+book,In the next {duration}
+book,{date} at {time}
+visit,I want to visit Paris in a {duration}
+contact,Sure {email} is my email
+contact,You can reach me on {number} or with my email {email}
+quickActions,I want to logout

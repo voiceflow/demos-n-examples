@@ -1,0 +1,18 @@
+{
+  "name": "replicate-llm-models-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["replicate", "llm", "models", "api", "voiceflow", "gallagan"],
+  "author": "NiKo | Voiceflow",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "replicate": "^0.10.0"
+  }
+}

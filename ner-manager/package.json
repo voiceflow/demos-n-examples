@@ -1,0 +1,29 @@
+{
+  "name": "csvner",
+  "version": "1.1.1",
+  "description": "Named-entity recognition tool for CSV files",
+  "keywords": ["ner","csv","Voiceflow","entity recognition","converter"],
+  "homepage": "https://github.com/voiceflow-gallagan/csvner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voiceflow-gallagan/csvner.git"
+  },
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Voiceflow | NiKo",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "csv-writer": "^1.6.0",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.1.5",
+    "nanospinner": "^1.1.0",
+    "wink-eng-lite-web-model": "^1.4.3",
+    "wink-nlp": "^1.13.0"
+  },
+  "bin": "./app.js"
+}
