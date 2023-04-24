@@ -5,6 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "build": "docker-compose up -d --build && yarn install && yarn start",
     "start": "node --no-warnings app.js"
   },
   "author": "Voiceflow | NiKo",
@@ -14,7 +15,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "hnswlib-node": "^1.4.2",
-    "langchain": "^0.0.43",
-    "openai": "^3.2.1"
+    "langchain": "^0.0.59",
+    "openai": "^3.2.1",
+    "pdfjs-dist": "^3.5.141",
+    "redis": "^4.6.5",
+    "sitemap-xml-parser": "^0.0.2"
   }
 }
