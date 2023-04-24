@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+#background {
+  position: fixed;
+  width: 110%;
+  height: 110%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -2;
+  top: -5%;
+  left: -5%;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 8s;
+}
+
+#input-placeholder {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#input-container {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 60%;
+  opacity: 0;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.80);
+}
+
+#wave {
+  position: absolute;
+  top: calc(85% - 53.97px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#user-input {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  transform: translate(-50%, 0);
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
+  text-align: center;
+}
+
+#response-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  max-height: 50%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.90);
+  font-weight: 300;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+#credits {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+#user-input.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+#user-input::placeholder {
+  color: transparent;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(-50%) scale(0.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0;
+  }
+}
