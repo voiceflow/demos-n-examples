@@ -1,10 +1,10 @@
-# Knowledge Base Demo | Voiceflow
-# Open AI GPT, Langchain, HNSWLib and Cheerio
+# AI | Knowledge Base Project | Voiceflow
+# Open AI GPT, Langchain, OpenSearch and Unstructured
 
 This code utilizes Open AI GPT, Langchain, Redis Cache, and OpenSearch and Cheerio to fetch web content from URLs, create embeddings/vectors and save them in a local database. The knowledge base can then be used with GPT to answer questions.
 
 ## Quickstart Video
-[![Watch the video](https://s3.amazonaws.com/com.voiceflow.studio/share/CleanShot-2023-03-17-at-14.03.29/CleanShot-2023-03-17-at-14.03.29.png)](https://www.loom.com/share/a4fccc7aac7d48548006570f6ac98576)
+[![Watch the video](https://s3.amazonaws.com/com.voiceflow.studio/share/loom/loom.png)](https://loom.com/share/02833f38e3a6461983a2d7c3a3a570b8)
 
 
 ## Node.js
