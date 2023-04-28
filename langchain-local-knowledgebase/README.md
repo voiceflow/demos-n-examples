@@ -28,7 +28,7 @@ First, copy the `.env` file and set up required environment variables.
 cp .env.example .env
 ```
 
-To create the containers and install the required dependencies, run:
+To create the containers, install the required dependencies and launch the server, run:
 
 ```bash
 yarn build
@@ -42,15 +42,10 @@ This should create the following containers:
 
 OpenSearch dashboard can be accessed at http://localhost:5601
 
-### Starting the Server
-
-Start the server by running:
-
-```bash
-yarn start
-```
+Install dependencies and start the server (app.js)
 
 The server will listen on the port specified in the `.env` file (default is 3000).
+
 
 ## API Documentation
 
