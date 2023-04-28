@@ -2,6 +2,7 @@
 backup
 tmp
 collections
+docs
 
 # Logs
 logs
