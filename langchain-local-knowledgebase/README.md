@@ -11,6 +11,7 @@ This code utilizes Open AI GPT, Langchain, Redis Cache, and OpenSearch and Cheer
 You need Node.js 18+ to run this code. You can download it here: https://nodejs.org/en/download/
 
 
+
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
@@ -32,6 +33,14 @@ To create the containers and install the required dependencies, run:
 ```bash
 yarn build
 ```
+
+This should create the following containers:
+✔ Container redis (cache)
+✔ Container unstructured (handle images, ppt, text, markdown)
+✔ Container opensearch (search engine)
+✔ Container opensearch-dashboards  (search engine dashboard)
+
+OpenSearch dashboard can be accessed at http://localhost:5601
 
 ### Starting the Server
 
@@ -79,31 +88,6 @@ GET /api/clearcache
 }
 ```
 
-### Delete a collection
-
-```
-DELETE /api/collection
-```
-
-#### Request
-
-```json
-{
-  "name": "collection_name"
-}
-```
-
-#### Response
-
-- `200 OK` on success
-
-```json
-{
-  "success": true,
-  "message": "Collection collection_name has been deleted",
-  "result": "result"
-}
-```
 
 ### Add content to OpenSearch
 
@@ -115,13 +99,13 @@ POST /api/add
 
 ```json
 {
-  "url": "URL",
-  "collection": "collection_name",
-  "filter": "filter",
-  "limit": 10,
-  "chunkSize": 2000,
-  "chunkOverlap": 250,
-  "sleep": 0
+  "url": "https://www.example.com/sitemap.xml", //* url of the sitemap
+  "collection": "collection_name", //* name of the collection to populate
+  "filter": "filter", // default to null - use to filter URL with this string (ex. "/blog/")
+  "limit": 10, // default to null
+  "chunkSize": 2000, // default to 2000
+  "chunkOverlap": 250, // default to 250
+  "sleep": 0 // For sitemap, time to wait between each URLs
 }
 ```
 
@@ -146,9 +130,9 @@ POST /api/live
 
 ```json
 {
-  "url": "URL",
-  "question": "Question",
-  "temperature": 0
+  "url": "https://www.example.com", //* url of the webpage
+  "question": "Your question", //* the question to ask
+  "temperature": 0 // default to 0
 }
 ```
 
@@ -172,11 +156,12 @@ POST /api/question
 
 ```json
 {
-  "question": "Question",
-  "collection": "collection_name",
-  "model": "model_name",
-  "temperature": 0,
-  "max_tokens": 400
+  "question": "your question", //* the question to ask
+  "collection": "collection_name", //* name of the collection to search
+  "model": "model_name", // default to gpt-3.5-turbo
+  "k": 3, // default to 3 (max number of results to use)
+  "temperature": 0, // default to 0
+  "max_tokens": 400 // default to 400
 }
 ```
 
@@ -190,22 +175,6 @@ POST /api/question
   "sources": ["source1", "source2"]
 }
 ```
-
-## Dependencies
-
-Libraries and modules in use:
-
-- `axios`: Performing HTTP requests.
-- `cheerio`: Web scraping library for parsing and querying HTML.
-- `crypto`: Creating hash digests for secure operations.
-- `dotenv`: Loading environment variables from '.env' file.
-- `express`: Web server for handling HTTP requests.
-- `fs`: File system module for interacting with files.
-- `http`: Creating HTTP server.
-- `redis`: Redis client for implementing caching.
-- `sitemap-xml-parser`: Parsing XML sitemaps.
-- `url`: Parsing and manipulating URL strings.
-- `@opensearch-project/opensearch`: OpenSearch client for indexing and searching.
 
 
 ## Using ngrok

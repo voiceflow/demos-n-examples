@@ -92,36 +92,6 @@ app.get('/api/clearcache', async (req, res) => {
   }
 })
 
-app.delete('/api/collection', async (req, res) => {
-  const { name } = req.body
-  if (!name) {
-    res.status(500).json({ message: 'Missing collection name' })
-  }
-  try {
-    const cdb = new ChromaClient()
-    await cdb.getCollection(name)
-    let error = await cdb.deleteCollection(name)
-
-    // Return the response to the user
-    if (!error) {
-      res.json({
-        success: true,
-        message: `Collection ${name} has been deleted`,
-        result,
-      })
-    } else {
-      res.json({
-        success: false,
-        message: `Error deleting ${name}`,
-        error,
-      })
-    }
-  } catch (err) {
-    console.error(err)
-    res.status(500).json({ message: 'Error processing the request' })
-  }
-})
-
 /* Main endpoint to add content to OpenSearch  */
 app.post('/api/add', async (req, res) => {
   const {
@@ -295,6 +265,7 @@ app.post('/api/question', async (req, res) => {
     question,
     collection = process.env.OPENSEARCH_DEFAULT_INDEX,
     model = 'gpt-3.5-turbo',
+    k = 3,
     temperature = 0,
     max_tokens = 400,
   } = req.body
@@ -311,20 +282,24 @@ app.post('/api/question', async (req, res) => {
   })
 
   let loadCollection = await sanitize(collection)
-
-  const vectorStore = await OpenSearchVectorStore.fromExistingIndex(
-    new OpenAIEmbeddings(),
-    {
-      client,
-      indexName: encodedCollection,
-    }
-  )
-
+  let vectorStore
+  try {
+    vectorStore = await OpenSearchVectorStore.fromExistingIndex(
+      new OpenAIEmbeddings(),
+      {
+        client,
+        indexName: encodedCollection,
+      }
+    )
+  } catch (err) {
+    vectorStore = null
+    console.info(`Collection ${collection} does not exist.`)
+  }
   try {
     if (vectorStore) {
       console.log('Using Vector Store')
       const chain = VectorDBQAChain.fromLLM(llm, vectorStore, {
-        k: 1,
+        k: k,
         returnSourceDocuments: true,
       })
       const response = await chain.call({
@@ -463,7 +438,7 @@ const sleepWait = (ms) => {
 async function parseSitmap(url, filter, limit) {
   const options = {
     delay: 4000,
-    limit: 1,
+    limit: 5,
   }
 
   const sitemapXMLParser = new SitemapXMLParser(url, options)
