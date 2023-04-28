@@ -243,7 +243,7 @@ app.post('/api/add', async (req, res) => {
       })
 
       const docOutput = await textSplitter.splitDocuments(docs)
-      console.log(docOutput)
+
       /* Clean metadata for OpenSearch */
       docOutput.forEach((document) => {
         document.metadata.source = document.metadata.filename
