@@ -5,8 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "build": "docker-compose up -d --build && yarn install",
-    "start": "node --no-warnings app.js"
+    "build": "docker-compose up -d --build && yarn start",
+    "start": "yarn install && node --no-warnings app.js"
   },
   "author": "Voiceflow | NiKo",
   "license": "ISC",

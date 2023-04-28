@@ -120,6 +120,31 @@ POST /api/add
 }
 ```
 
+### Delete a collection
+
+```
+DELETE /api/collection
+```
+
+#### Request
+
+```json
+{
+  "collection": "collection_name", //* name of the collection to delete
+}
+```
+
+#### Response
+
+- `200 OK` on success
+
+```json
+{
+  "success": true,
+  "message": "{collection_name} has been deleted"
+}
+```
+
 ### Get a response using live webpage as context
 
 ```
