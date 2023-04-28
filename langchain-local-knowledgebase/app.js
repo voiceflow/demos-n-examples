@@ -92,6 +92,31 @@ app.get('/api/clearcache', async (req, res) => {
   }
 })
 
+/* Delete a collection  */
+app.delete('/api/collection', async (req, res) => {
+  const { collection } = req.body
+  if (!collection) {
+    res.status(500).json({ message: 'Missing collection' })
+    return
+  }
+  let encodedCollection = await sanitize(collection)
+  try {
+    let vectorStore = await OpenSearchVectorStore.fromExistingIndex(
+      new OpenAIEmbeddings(),
+      {
+        client,
+        indexName: encodedCollection,
+      }
+    )
+    vectorStore.deleteIfExists()
+    vectorStore = null
+    res.json({ success: true, message: `${collection} has been deleted` })
+  } catch (err) {
+    console.error(err)
+    res.status(500).json({ message: 'Error deleting the collection' })
+  }
+})
+
 /* Main endpoint to add content to OpenSearch  */
 app.post('/api/add', async (req, res) => {
   const {
@@ -128,7 +153,7 @@ app.post('/api/add', async (req, res) => {
       const sitemap = await parseSitmap(url, filter, limit)
 
       const asyncFunction = async (item) => {
-        console.log('Adding >>', item)
+        console.log('\nAdding >>', item)
         await addURL(item, encodedCollection, chunkSize, chunkOverlap)
       }
 
@@ -140,8 +165,7 @@ app.post('/api/add', async (req, res) => {
       }
 
       iterateAndRunAsync(sitemap).then(async () => {
-        console.log('Done!')
-        console.log('Collection:', collection)
+        console.log('\nDone! | Collection:', collection)
 
         // Return the response to the user
         res.json({ response: 'started', collection: collection })
@@ -163,7 +187,7 @@ app.post('/api/add', async (req, res) => {
         splitPages: true,
       })
       const docs = await loader.load()
-      console.log(docs)
+
       const textSplitter = new RecursiveCharacterTextSplitter({
         chunkSize: chunkSize,
         chunkOverlap: chunkOverlap,
@@ -171,12 +195,14 @@ app.post('/api/add', async (req, res) => {
 
       const docOutput = await textSplitter.splitDocuments(docs)
 
+      /* Clean metadata for OpenSearch */
       docOutput.forEach((document) => {
+        document.metadata.source = basename(document.metadata.source)
         delete document.metadata.pdf
         delete document.metadata.loc
       })
 
-      const vectorStore = await OpenSearchVectorStore.fromDocuments(
+      let vectorStore = await OpenSearchVectorStore.fromDocuments(
         docOutput,
         new OpenAIEmbeddings(),
         {
@@ -184,8 +210,8 @@ app.post('/api/add', async (req, res) => {
           indexName: encodedCollection,
         }
       )
-
-      console.log('Added!')
+      vectorStore = null
+      console.log('✔ Added!')
       // Return the response to the user
       res.json({ response: 'added', collection: collection })
     } catch (err) {
@@ -217,9 +243,17 @@ app.post('/api/add', async (req, res) => {
       })
 
       const docOutput = await textSplitter.splitDocuments(docs)
+      console.log(docOutput)
+      /* Clean metadata for OpenSearch */
+      docOutput.forEach((document) => {
+        document.metadata.source = document.metadata.filename
+        delete document.metadata.filename
+        delete document.metadata.category
+        delete document.metadata.loc
+      })
 
       // Create a new document for the URL
-      const vectorStore = await OpenSearchVectorStore.fromDocuments(
+      let vectorStore = await OpenSearchVectorStore.fromDocuments(
         docOutput,
         new OpenAIEmbeddings(),
         {
@@ -227,6 +261,7 @@ app.post('/api/add', async (req, res) => {
           indexName: encodedCollection,
         }
       )
+      vectorStore = null
       console.log('Added!')
       // Return the response to the user
       res.json({ response: 'added', collection: collection })
@@ -242,6 +277,7 @@ app.post('/api/live', async (req, res) => {
   const { url, question, temperature = 0 } = req.body
   if (!url || !question) {
     res.status(500).json({ message: 'Missing URL/Question' })
+    return
   }
   try {
     const model = new ChatOpenAI({
@@ -312,6 +348,7 @@ app.post('/api/question', async (req, res) => {
       // Remove duplicates
       sources = [...new Set(sources)]
       console.log('Sources:', sources)
+      vectorStore = null
       // Return the response to the user
       res.json({ response: response.text, sources })
     } else {
@@ -463,11 +500,12 @@ async function addURL(url, encodedCollection, chunkSize, chunkOverlap) {
 
   const docOutput = await textSplitter.splitDocuments(docs)
 
+  /* Clean metadata for OpenSearch */
   docOutput.forEach((document) => {
     delete document.metadata.loc
   })
 
-  const vectorStore = await OpenSearchVectorStore.fromDocuments(
+  let vectorStore = await OpenSearchVectorStore.fromDocuments(
     docOutput,
     new OpenAIEmbeddings(),
     {
@@ -475,5 +513,6 @@ async function addURL(url, encodedCollection, chunkSize, chunkOverlap) {
       indexName: encodedCollection,
     }
   )
-  console.log(`${url} has been added!`)
+  vectorStore = null
+  console.log('✔ Added!')
 }
