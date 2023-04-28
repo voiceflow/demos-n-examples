@@ -1,7 +1,7 @@
 # AI | Knowledge Base Project | Voiceflow
 # Open AI GPT, Langchain, OpenSearch and Unstructured
 
-This code utilizes Open AI GPT, Langchain, Redis Cache, and OpenSearch and Cheerio to fetch web content from URLs, create embeddings/vectors and save them in a local database. The knowledge base can then be used with GPT to answer questions.
+This code utilizes Open AI GPT, Langchain, Redis Cache, OpenSearch and Unstructured to fetch content from URLs, sitemap, PDF, Powerpoint, Notion doc and images to create embeddings/vectors and save them in a local OpenSearch database. The crfeated collections can then be used with GPT to answer questions.
 
 ## Quickstart Video
 [![Watch the video](https://s3.amazonaws.com/com.voiceflow.studio/share/loom/loom.png)](https://loom.com/share/02833f38e3a6461983a2d7c3a3a570b8)
