@@ -1,0 +1,65 @@
+version: '3.9'
+
+services:
+
+  unstructured:
+    image: 'quay.io/unstructured-io/unstructured-api:latest'
+    container_name: unstructured
+    hostname: unstructured
+    ports:
+      - '8000:8000'
+    networks:
+      - net
+
+  redis:
+    image: 'redis:6.2-alpine'
+    container_name: redis
+    command: ["redis-server", "--bind", "redis", "--port", "6379"]
+    hostname: redis
+    ports:
+      - '6379:6379'
+    networks:
+      - net
+
+  opensearch:
+    image: opensearchproject/opensearch:latest
+    container_name: opensearch
+    environment:
+      - cluster.name=opensearch
+      - node.name=opensearch
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "DISABLE_INSTALL_DEMO_CONFIG=true"
+      - "DISABLE_SECURITY_PLUGIN=true"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+    ports:
+      - 9200:9200
+      - 9600:9600
+    networks:
+      - net
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:latest # Make sure the version of opensearch-dashboards matches the version of opensearch installed on other nodes
+    container_name: opensearch-dashboards
+    ports:
+      - 5601:5601 # Map host port 5601 to container port 5601
+    expose:
+      - "5601" # Expose port 5601 for web access to OpenSearch Dashboards
+    environment:
+      OPENSEARCH_HOSTS: '["http://opensearch:9200"]' # Define the OpenSearch nodes that OpenSearch Dashboards will query
+      DISABLE_SECURITY_DASHBOARDS_PLUGIN: "true" # disables security dashboards plugin in OpenSearch Dashboards
+    networks:
+      - net
+
+networks:
+  net:
+    driver: bridge
+
+volumes:
+  opensearch_data:
