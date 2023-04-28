@@ -1,59 +1,201 @@
-# Knowledge Base Demo | Voiceflow
-# Open AI GPT, Langchain, HNSWLib and Cheerio
+# AI | Knowledge Base Project | Voiceflow
+# Open AI GPT, Langchain, OpenSearch and Unstructured
 
-This code utilizes Open AI GPT, Langchain, HNSWLib and Cheerio to fetch web content from URLs, create embeddings/vectors and save them in a local database. The knowledge base can then be used with GPT to answer questions.
+This code utilizes Open AI GPT, Langchain, Redis Cache, OpenSearch and Unstructured to fetch content from URLs, sitemap, PDF, Powerpoint, Notion doc and images to create embeddings/vectors and save them in a local OpenSearch database. The crfeated collections can then be used with GPT to answer questions.
 
 ## Quickstart Video
-[![Watch the video](https://s3.amazonaws.com/com.voiceflow.studio/share/CleanShot-2023-03-17-at-14.03.29/CleanShot-2023-03-17-at-14.03.29.png)](https://www.loom.com/share/a4fccc7aac7d48548006570f6ac98576)
+[![Watch the video](https://s3.amazonaws.com/com.voiceflow.studio/share/loom/loom.png)](https://loom.com/share/02833f38e3a6461983a2d7c3a3a570b8)
 
 
 ## Node.js
-If you are running this on Node.js 16, either:
-
-run your application with NODE_OPTIONS='--experimental-fetch' node ..., or
-install node-fetch and follow the instructions <a href="https://github.com/node-fetch/node-fetch#providing-global-access" target="_blank" rel="noopener noreferrer">here</a>
-
-If you are running this on Node.js 18 or 19, you do not need to do anything.
+You need Node.js 18+ to run this code. You can download it here: https://nodejs.org/en/download/
 
 
-## Setup
-Setup is simple, just run:
+
+## Table of Contents
+
+1. [Getting Started](#getting-started)
+2. [API Documentation](#api-documentation)
+3. [Dependencies](#dependencies)
+
+## Getting Started
+
+### Installation
+
+First, copy the `.env` file and set up required environment variables.
+
+```bash
+cp .env.example .env
+```
+
+To create the containers, install the required dependencies and launch the server, run:
+
+```bash
+yarn build
+```
+
+This should create the following containers:
+✔ Container redis (cache)
+✔ Container unstructured (handle images, ppt, text, markdown)
+✔ Container opensearch (search engine)
+✔ Container opensearch-dashboards  (search engine dashboard)
+
+OpenSearch dashboard can be accessed at http://localhost:5601
+
+Install dependencies and start the server (app.js)
+
+The server will listen on the port specified in the `.env` file (default is 3000).
+
+
+## API Documentation
+
+### Check server health
 
 ```
-npm i
-npm start
+GET /api/health
 ```
 
-This app requires an `.env` file with `PORT`, `OPENAI_API_KEY` and `SECRET` (for API key encoding).
-You can rename the .env.example file to .env and fill in the values.
+#### Response
 
-## Endpoints
-
-There are 2 endpoints available:
-
-### `/parser`
-
-This endpoint allows a POST request with the URL link of the page to parse.
-You need to pass the Voiceflow Assistant API Key in the body.
+- `200 OK` on success
 
 ```json
 {
-	"url":"https://www.voiceflow.com/blog/prompt-chaining-conversational-ai",
-	"apikey":"VF.DM.XXX"
+  "success": true,
+  "message": "Server is healthy"
 }
 ```
 
-### `/question`
+### Clear Redis cache
 
-This endpoint allows a POST request with the question.
-You need to pass the Voiceflow Assistant API Key in the body.
+```
+GET /api/clearcache
+```
+
+#### Response
+
+- `200 OK` on success
 
 ```json
 {
-	"question":"What is prompt chaining?",
-	"apikey":"VF.DM.XXX"
+  "success": true,
+  "message": "Cache cleared"
 }
 ```
+
+
+### Add content to OpenSearch
+
+```
+POST /api/add
+```
+
+#### Request
+
+```json
+{
+  "url": "https://www.example.com/sitemap.xml", //* url of the sitemap
+  "collection": "collection_name", //* name of the collection to populate
+  "filter": "filter", // default to null - use to filter URL with this string (ex. "/blog/")
+  "limit": 10, // default to null
+  "chunkSize": 2000, // default to 2000
+  "chunkOverlap": 250, // default to 250
+  "sleep": 0 // For sitemap, time to wait between each URLs
+}
+```
+
+#### Response
+
+- `200 OK` on success
+
+```json
+{
+  "response": "added",
+  "collection": "collection_name"
+}
+```
+
+### Delete a collection
+
+```
+DELETE /api/collection
+```
+
+#### Request
+
+```json
+{
+  "collection": "collection_name", //* name of the collection to delete
+}
+```
+
+#### Response
+
+- `200 OK` on success
+
+```json
+{
+  "success": true,
+  "message": "{collection_name} has been deleted"
+}
+```
+
+### Get a response using live webpage as context
+
+```
+POST /api/live
+```
+
+#### Request
+
+```json
+{
+  "url": "https://www.example.com", //* url of the webpage
+  "question": "Your question", //* the question to ask
+  "temperature": 0 // default to 0
+}
+```
+
+#### Response
+
+- `200 OK` on success
+
+```json
+{
+  "response": "response_text"
+}
+```
+
+### Get a response using the vector store
+
+```
+POST /api/question
+```
+
+#### Request
+
+```json
+{
+  "question": "your question", //* the question to ask
+  "collection": "collection_name", //* name of the collection to search
+  "model": "model_name", // default to gpt-3.5-turbo
+  "k": 3, // default to 3 (max number of results to use)
+  "temperature": 0, // default to 0
+  "max_tokens": 400 // default to 400
+}
+```
+
+#### Response
+
+- `200 OK` on success
+
+```json
+{
+  "response": "response_text",
+  "sources": ["source1", "source2"]
+}
+```
+
 
 ## Using ngrok
 
