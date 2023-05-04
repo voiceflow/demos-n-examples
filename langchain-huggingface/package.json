@@ -1,0 +1,29 @@
+{
+  "name": "langchain-huggingface-voiceflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "yarn install && node --no-warnings app.js"
+  },
+  "author": "Voiceflow | NiKo",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.4.3",
+    "@huggingface/inference": "1",
+    "@opensearch-project/opensearch": "^2.2.1",
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "hnswlib-node": "^1.4.2",
+    "langchain": "^0.0.68",
+    "openai": "^3.2.1",
+    "pdf-parse": "^1.1.1",
+    "redis": "^4.6.5",
+    "replicate": "^0.11.1",
+    "sanitize-html": "^2.10.0",
+    "sitemap-xml-parser": "^0.0.2"
+  }
+}
