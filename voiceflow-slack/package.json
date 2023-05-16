@@ -1,0 +1,39 @@
+{
+  "name": "voiceflow-slackbot",
+  "version": "1.0.2",
+  "description": "Use Voiceflow to run a Slack Bot with Dialog Manager API",
+  "main": "index.js",
+  "sourceType": "module",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voiceflow-gallagan/heroku-vf-slackbot.git"
+  },
+  "keywords": [
+    "voiceflow",
+    "slack",
+    "dialog manager",
+    "bot",
+    "api"
+  ],
+  "author": "Nicolas Arcay Bermejo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voiceflow-gallagan/heroku-vf-slackbot/issues"
+  },
+  "homepage": "https://github.com/voiceflow-gallagan/heroku-vf-slackbot#readme",
+  "prettier": "@voiceflow/prettier-config",
+  "dependencies": {
+    "@slack/bolt": "^3.10.0",
+    "axios": "^0.26.0",
+    "escape-html": "^1.0.3",
+    "eslint": "^8.10.0",
+    "slate": "^0.73.1",
+    "string-similarity": "^4.0.4"
+  }
+}
