@@ -91,7 +91,7 @@ Select the **Dialog API** integration, click **Copy API Key** to copy your Voice
 
 ![logotype.webp](images/logotype.webp)
 
-[Fork on Replit](https://replit.com/@niko-voiceflow/voiceflow-slackbot?v=1)
+[Fork on Replit](https://replit.com/@niko-voiceflow/voiceflow-discord?v=1)
 
 ### Setup the Replit secrets
 
