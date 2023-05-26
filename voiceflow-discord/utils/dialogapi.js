@@ -8,6 +8,8 @@ const {
 } = require('discord.js')
 
 let noReplyTimeout = null
+const versionID = process.env.VOICEFLOW_VERSION_ID || 'development'
+let session = `${versionID}.${createSession()}`
 
 module.exports = {
   interact: async (interaction, user, isFollow, reset) => {
@@ -82,6 +84,7 @@ async function dialogAPI(interaction, user, isFollow, action) {
       headers: {
         Authorization: process.env.VOICEFLOW_API_KEY,
         'Content-Type': 'application/json',
+        sessionid: session,
       },
     }
   )
@@ -154,6 +157,29 @@ async function dialogAPI(interaction, user, isFollow, action) {
         await dialogAPI(interaction, user, true, action)
       }, noReply)
     }
+    if (isEnding === true) {
+      // an end trace means the the Voiceflow dialog has ended
+
+      let userName = null
+      let avatarURL =
+        'https://s3.amazonaws.com/com.voiceflow.studio/share/200x200/200x200.png'
+      try {
+        userName = interaction.user.username
+        avatarURL = interaction.user.displayAvatarURL({
+          format: 'png',
+          dynamic: true,
+          size: 1024,
+        })
+      } catch {
+        userName = interaction.author.username
+        avatarURL = interaction.author.displayAvatarURL({
+          format: 'png',
+          dynamic: true,
+          size: 1024,
+        })
+      }
+      await saveTranscript(userName, avatarURL)
+    }
   }
 }
 
@@ -163,5 +189,59 @@ function getNoReplyTimeout(arr) {
     return noReplyItem.payload.timeout * 1000
   } else {
     return null
+  }
+}
+
+function createSession() {
+  // Random Number Generator
+  var randomNo = Math.floor(Math.random() * 1000 + 1)
+  // get Timestamp
+  var timestamp = Date.now()
+  // get Day
+  var date = new Date()
+  var weekday = new Array(7)
+  weekday[0] = 'Sunday'
+  weekday[1] = 'Monday'
+  weekday[2] = 'Tuesday'
+  weekday[3] = 'Wednesday'
+  weekday[4] = 'Thursday'
+  weekday[5] = 'Friday'
+  weekday[6] = 'Saturday'
+  var day = weekday[date.getDay()]
+  // Join random number+day+timestamp
+  var session_id = randomNo + day + timestamp
+  return session_id
+}
+
+async function saveTranscript(username, userpix) {
+  if (versionID !== 'production' || versionID !== 'development') {
+    console.log('SAVE TRANSCRIPT')
+    if (!username || username == '' || username == undefined) {
+      username = 'Anonymous'
+    }
+    axios({
+      method: 'put',
+      url: 'https://api.voiceflow.com/v2/transcripts',
+      data: {
+        browser: 'Discord',
+        device: 'desktop',
+        os: 'macOS',
+        sessionID: session,
+        unread: true,
+        versionID: versionID,
+        user: {
+          name: username,
+          image: userpix,
+        },
+      },
+      headers: {
+        Authorization: process.env.VOICEFLOW_API_KEY,
+      },
+    })
+      .then(function (response) {
+        console.log('Saved!')
+        session = `${process.env.VOICEFLOW_VERSION_ID}.${createSession()}`
+      })
+      .catch((err) => console.log(err))
   }
 }
