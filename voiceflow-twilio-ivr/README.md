@@ -151,3 +151,5 @@ Simply call your **Twilio number** and start interacting with your Assistant.
 ## Video
 
 We’ve also made a video to explain how to created, setup and use the Custom Action steps in your Assistant to handle DTMF, make a call or send an SMS.
+
+SOON
