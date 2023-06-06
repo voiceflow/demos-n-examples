@@ -8,6 +8,7 @@ import { Text } from 'slate'
 import escapeHtml from 'escape-html'
 
 const versionID = process.env.VOICEFLOW_VERSION_ID || 'production'
+const projectID = process.env.VOICEFLOW_PROJECT_ID || null
 let session = `${versionID}.${createSession()}`
 const VOICEFLOW_API_KEY = process.env.VOICEFLOW_API_KEY
 const VOICEFLOW_RUNTIME_ENDPOINT = process.env.VOICEFLOW_RUNTIME_ENDPOINT || 'general-runtime.voiceflow.com'
@@ -120,11 +121,11 @@ app.message(ANY_WORD_REGEX, async ({ message, say, client }) => {
     })
   }
 })
-;(async () => {
-  // Start the app
-  await app.start()
-  console.log(`⚡️ Bolt app is running!`)
-})()
+  ; (async () => {
+    // Start the app
+    await app.start()
+    console.log(`⚡️ Bolt app is running!`)
+  })()
 
 // Interact with Voiceflow | Dialog Manager API
 async function interact(userID, say, client, request) {
@@ -311,7 +312,7 @@ async function interact(userID, say, client, request) {
             break;
           }
           case 'no-reply': {
-            noreply = setTimeout(function () {
+            noreply = setTimeout(function() {
               interact(userID, say, client, {
                 type: 'no-reply',
               });
@@ -376,37 +377,40 @@ async function interact(userID, say, client, request) {
 }
 
 async function saveTranscript(username, userpix) {
-  console.log('SAVE TRANSCRIPT')
-  if (!username || username == '' || username == undefined) {
-    username = 'Anonymous';
-    userpix = 'https://avatars.slack-edge.com/2021-03-20/1879385687829_370801c602af840e43f8_192.png';
-  }
-  axios({
-    method: 'put',
-    url: 'https://api.voiceflow.com/v2/transcripts',
-    data: {
-      browser: 'Slack',
-      device: 'desktop',
-      os: 'macOS',
-      sessionID: session,
-      unread: true,
-      versionID: versionID,
-      notes: errorMessage == '' ? '' : errorMessage,
-      reportTags: isError == true ? ['system.saved'] : [],
-      user: {
-        name: username,
-        image: userpix,
+  if (projectID) {
+    console.log('SAVE TRANSCRIPT')
+    if (!username || username == '' || username == undefined) {
+      username = 'Anonymous';
+      userpix = 'https://avatars.slack-edge.com/2021-03-20/1879385687829_370801c602af840e43f8_192.png';
+    }
+    axios({
+      method: 'put',
+      url: 'https://api.voiceflow.com/v2/transcripts',
+      data: {
+        browser: 'Slack',
+        device: 'desktop',
+        os: 'macOS',
+        sessionID: session,
+        unread: true,
+        versionID: versionID,
+        projectID: projectID,
+        notes: errorMessage == '' ? '' : errorMessage,
+        reportTags: isError == true ? ['system.saved'] : [],
+        user: {
+          name: username,
+          image: userpix,
+        },
       },
-    },
-    headers: {
-      Authorization: VOICEFLOW_API_KEY,
-    },
-  })
-    .then(function (response) {
-      console.log('Saved!');
-      isError = false;
-      errorMessage = '';
-      session = `${process.env.VOICEFLOW_VERSION_ID}.${createSession()}`;
+      headers: {
+        Authorization: VOICEFLOW_API_KEY,
+      },
     })
-    .catch((err) => console.log(err));
+      .then(function(response) {
+        console.log('Saved!');
+        isError = false;
+        errorMessage = '';
+        session = `${process.env.VOICEFLOW_VERSION_ID}.${createSession()}`;
+      })
+      .catch((err) => console.log(err));
+  }
 }
