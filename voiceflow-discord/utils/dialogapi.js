@@ -9,6 +9,7 @@ const {
 
 let noReplyTimeout = null
 const versionID = process.env.VOICEFLOW_VERSION_ID || 'development'
+const projectID = process.env.VOICEFLOW_PROJECT_ID || null
 let session = `${versionID}.${createSession()}`
 
 module.exports = {
@@ -214,7 +215,7 @@ function createSession() {
 }
 
 async function saveTranscript(username, userpix) {
-  if (versionID !== 'production' || versionID !== 'development') {
+  if (projectID) {
     console.log('SAVE TRANSCRIPT')
     if (!username || username == '' || username == undefined) {
       username = 'Anonymous'
@@ -229,6 +230,7 @@ async function saveTranscript(username, userpix) {
         sessionID: session,
         unread: true,
         versionID: versionID,
+        projectID: projectID,
         user: {
           name: username,
           image: userpix,

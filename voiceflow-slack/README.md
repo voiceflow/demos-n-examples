@@ -187,6 +187,9 @@ Slack app **signing secret**
 **VOICEFLOW\_VERSION\_ID**
 Voiceflow **project version ID** (Needed if you want to save transcripts, will default to 'production' otherwise)
 
+**VOICEFLOW\_PROJECT\_ID**
+Voiceflow **project ID** (Needed if you want to save transcripts, will default to null otherwise)
+
 **VOICEFLOW\_API\_KEY**
 Voiceflow **project API key** (from the Integration section)
 
@@ -195,6 +198,7 @@ In the Secrets tab, you can click on Edit as JSON button and paste the following
 {
   "VOICEFLOW_API_KEY":"VF.12345678",
   "VOICEFLOW_VERSION_ID":"12345678",
+  "VOICEFLOW_PROJECT_ID":"12345678",
   "VOICEFLOW_RUNTIME_ENDPOINT":"general-runtime.voiceflow.com",
   "SLACK_APP_TOKEN":"XXXX",
   "SLACK_BOT_TOKEN":"XXXXX",

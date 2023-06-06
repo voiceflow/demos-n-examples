@@ -116,6 +116,9 @@ Voiceflow project API key (from the Integration section)
 **VOICEFLOW_VERSION_ID**
 Voiceflow project version ID (only for transcripts, default to 'production')
 
+**VOICEFLOW_PROJECT_ID**
+Voiceflow project ID (only for transcripts, default to null)
+
 On the **Secrets tab**, you can click the **Edit as JSON** button and paste the following JSON (do not forget to update the keys values):
 
 ![CleanShot 2023-05-25 at 14.32.30.png](images/CleanShot_2023-05-25_at_14.32.30.png)
@@ -127,7 +130,8 @@ On the **Secrets tab**, you can click the **Edit as JSON** button and paste the 
   "SERVER_ID": "XXX",
   "VOICEFLOW_API_URL": "https://general-runtime.voiceflow.com",
   "VOICEFLOW_API_KEY": "VF.DM.XXX",
-  "VOICEFLOW_VERSION_ID": "XXX"
+  "VOICEFLOW_VERSION_ID": "XXX",
+  "VOICEFLOW_PROJECT_ID": "XXX"
 }
 
 ```

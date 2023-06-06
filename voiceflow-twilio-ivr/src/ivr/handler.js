@@ -10,6 +10,7 @@ const VoiceResponse = require('twilio').twiml.VoiceResponse
 const SMS = require('twilio')(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 const axios = require('axios')
 const VOICEFLOW_VERSION_ID = process.env.VOICEFLOW_VERSION_ID || 'development'
+const VOICEFLOW_PROJECT_ID = process.env.VOICEFLOW_PROJECT_ID || null
 let session = `${VOICEFLOW_VERSION_ID}.${createSession()}`
 
 async function interact(caller, action) {
@@ -125,10 +126,7 @@ function createSession() {
 }
 
 async function saveTranscript(username) {
-  if (
-    VOICEFLOW_VERSION_ID !== 'production' ||
-    VOICEFLOW_VERSION_ID !== 'development'
-  ) {
+  if (VOICEFLOW_PROJECT_ID) {
     console.log('SAVE TRANSCRIPT')
     if (!username || username == '' || username == undefined) {
       username = 'Anonymous'
@@ -143,6 +141,7 @@ async function saveTranscript(username) {
         sessionID: session,
         unread: true,
         versionID: VOICEFLOW_VERSION_ID,
+        projectID: VOICEFLOW_PROJECT_ID,
         user: {
           name: username,
           image:
