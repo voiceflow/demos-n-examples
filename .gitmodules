@@ -7,3 +7,6 @@
 [submodule "elevenlabs-integration"]
 	path = elevenlabs-integration
 	url = https://github.com/voiceflow-gallagan/elevenlabs-integration.git
+[submodule "ner-manager"]
+	path = ner-manager
+	url = https://github.com/voiceflow-gallagan/ner-manager.git
