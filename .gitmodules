@@ -1,0 +1,3 @@
+[submodule "example-integration-whatsapp"]
+	path = example-integration-whatsapp
+	url = https://github.com/voiceflow/example-integration-whatsapp.git
