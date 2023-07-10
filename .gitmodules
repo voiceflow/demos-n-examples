@@ -28,3 +28,6 @@
 [submodule "langchain-local-knowledgebase"]
 	path = langchain-local-knowledgebase
 	url = https://github.com/voiceflow-gallagan/langchain-local-knowledgebase.git
+[submodule "voiceflow_telegram"]
+	path = voiceflow_telegram
+	url = https://github.com/zslamkov/voiceflow_telegram.git
