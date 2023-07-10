@@ -13,3 +13,6 @@
 [submodule "replicate-llm-models-api"]
 	path = replicate-llm-models-api
 	url = https://github.com/voiceflow-gallagan/replicate-llm-models-api.git
+[submodule "webpage-chat-demo"]
+	path = webpage-chat-demo
+	url = https://github.com/voiceflow-gallagan/webpage-chat-demo.git
