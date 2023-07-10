@@ -4,3 +4,6 @@
 [submodule "asr-demo-whisper"]
 	path = asr-demo-whisper
 	url = https://github.com/voiceflow-gallagan/asr-demo-whisper.git
+[submodule "elevenlabs-integration"]
+	path = elevenlabs-integration
+	url = https://github.com/voiceflow-gallagan/elevenlabs-integration.git
