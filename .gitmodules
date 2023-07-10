@@ -10,3 +10,6 @@
 [submodule "ner-manager"]
 	path = ner-manager
 	url = https://github.com/voiceflow-gallagan/ner-manager.git
+[submodule "replicate-llm-models-api"]
+	path = replicate-llm-models-api
+	url = https://github.com/voiceflow-gallagan/replicate-llm-models-api.git
