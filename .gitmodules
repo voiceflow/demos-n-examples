@@ -22,3 +22,6 @@
 [submodule "voiceflow-slack"]
 	path = voiceflow-slack
 	url = https://github.com/voiceflow-gallagan/voiceflow-slack.git
+[submodule "voiceflow-discord"]
+	path = voiceflow-discord
+	url = https://github.com/voiceflow-gallagan/voiceflow-discord.git
