@@ -1,3 +1,6 @@
 [submodule "example-integration-whatsapp"]
 	path = example-integration-whatsapp
 	url = https://github.com/voiceflow/example-integration-whatsapp.git
+[submodule "asr-demo-whisper"]
+	path = asr-demo-whisper
+	url = https://github.com/voiceflow-gallagan/asr-demo-whisper.git
