@@ -16,3 +16,6 @@
 [submodule "webpage-chat-demo"]
 	path = webpage-chat-demo
 	url = https://github.com/voiceflow-gallagan/webpage-chat-demo.git
+[submodule "voiceflow-twilio-ivr"]
+	path = voiceflow-twilio-ivr
+	url = https://github.com/voiceflow-gallagan/voiceflow-twilio-ivr.git
