@@ -25,3 +25,6 @@
 [submodule "voiceflow-discord"]
 	path = voiceflow-discord
 	url = https://github.com/voiceflow-gallagan/voiceflow-discord.git
+[submodule "langchain-local-knowledgebase"]
+	path = langchain-local-knowledgebase
+	url = https://github.com/voiceflow-gallagan/langchain-local-knowledgebase.git
