@@ -31,3 +31,6 @@
 [submodule "voiceflow_telegram"]
 	path = voiceflow_telegram
 	url = https://github.com/zslamkov/voiceflow_telegram.git
+[submodule "hugginface-inference"]
+	path = hugginface-inference
+	url = https://github.com/voiceflow-gallagan/hugginface-inference.git
