@@ -34,3 +34,6 @@
 [submodule "hugginface-inference"]
 	path = hugginface-inference
 	url = https://github.com/voiceflow-gallagan/hugginface-inference.git
+[submodule "discord-live-answer-example"]
+	path = discord-live-answer-example
+	url = https://github.com/voiceflow-gallagan/discord-live-answer-example.git
