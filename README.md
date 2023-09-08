@@ -33,11 +33,15 @@ In this document, you will find a collection of various projects and demos imple
     - [Repository Link](https://github.com/voiceflow-gallagan/replicate-llm-models-api)
 
 - **Voiceflow Discord**
-    - Description: Voiceflow integration with Discord.
+    - Description: Voiceflow demo integration with Discord.
     - [Repository Link](https://github.com/voiceflow-gallagan/voiceflow-discord)
 
+- **Voiceflow Live Answer Discord**
+    - Description: Voiceflow demo integration with Discord and the live answer feature.
+    - [Repository Link](https://github.com/voiceflow-gallagan/discord-live-answer-example)
+
 - **Voiceflow Slack**
-    - Description: A Voiceflow integration with Slack.
+    - Description: Voiceflow demo integration with Slack.
     - [Repository Link](https://github.com/voiceflow-gallagan/voiceflow-slack)
 
 - **Voiceflow Twilio IVR**
@@ -45,7 +49,7 @@ In this document, you will find a collection of various projects and demos imple
     - [Repository Link](https://github.com/voiceflow-gallagan/voiceflow-twilio-ivr)
 
 - **Voiceflow Telegram**
-    - Description: A Voiceflow integration with Telegram.
+    - Description: Voiceflow demo integration with Telegram.
     - [Repository Link](https://github.com/zslamkov/voiceflow_telegram)
 
 - **Webpage Chat Demo**
