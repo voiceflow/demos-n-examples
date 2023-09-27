@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Upload Zendesk Articles to VF Knowledge base**
+    - Description: This repository contains a sample code for an integration to fetch, clean and upload Zendesk articles to VF KB.
+    - [Repository Link](https://github.com/voiceflow-gallagan/kb-vf-zendesk.git)
+
 - **Text to Image using Voiceflow API Step and Hugging Face**
     - Description: This repository contains a Node.js application with the endpoint /text2image leveraging Hugging Face's textToImage function of their inference API.
     - [Repository Link](https://github.com/voiceflow-gallagan/hugginface-inference)
