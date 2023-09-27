@@ -37,3 +37,6 @@
 [submodule "discord-live-answer-example"]
 	path = discord-live-answer-example
 	url = https://github.com/voiceflow-gallagan/discord-live-answer-example.git
+[submodule "kb-vf-zendesk"]
+	path = kb-vf-zendesk
+	url = https://github.com/voiceflow-gallagan/kb-vf-zendesk.git
