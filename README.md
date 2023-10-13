@@ -4,9 +4,17 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Presidio API | PII Anonymizer**
+    - Description: This repository contains a service that exposes an endpoint for anonymizing Personally Identifiable Information (PII). It uses the [Microsoft Presidio](https://github.com/microsoft/presidio/tree/main) project for the anonymization process. The application is built on [Bun](https://bun.sh), a JavaScript runtime that helps to create performant applications.
+    - [Repository Link](https://github.com/voiceflow-gallagan/presidio-api)
+
+- **Spotlight Demo | Electron App**
+    - Description: This repository contains a sample code for an Electron app that uses Voiceflow Dialog API to interact with your Voiceflow Assistant and return a markdown formated response with some animation.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vfassistant-electron)
+
 - **Upload Zendesk Articles to VF Knowledge base**
     - Description: This repository contains a sample code for an integration to fetch, clean and upload Zendesk articles to VF KB.
-    - [Repository Link](https://github.com/voiceflow-gallagan/kb-vf-zendesk.git)
+    - [Repository Link](https://github.com/voiceflow-gallagan/kb-vf-zendesk)
 
 - **Text to Image using Voiceflow API Step and Hugging Face**
     - Description: This repository contains a Node.js application with the endpoint /text2image leveraging Hugging Face's textToImage function of their inference API.
