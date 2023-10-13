@@ -40,3 +40,6 @@
 [submodule "kb-vf-zendesk"]
 	path = kb-vf-zendesk
 	url = https://github.com/voiceflow-gallagan/kb-vf-zendesk.git
+[submodule "vfassistant-electron"]
+	path = vfassistant-electron
+	url = https://github.com/voiceflow-gallagan/vfassistant-electron.git
