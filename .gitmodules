@@ -43,3 +43,6 @@
 [submodule "vfassistant-electron"]
 	path = vfassistant-electron
 	url = https://github.com/voiceflow-gallagan/vfassistant-electron.git
+[submodule "presidio-api"]
+	path = presidio-api
+	url = https://github.com/voiceflow-gallagan/presidio-api.git
