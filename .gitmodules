@@ -46,3 +46,6 @@
 [submodule "presidio-api"]
 	path = presidio-api
 	url = https://github.com/voiceflow-gallagan/presidio-api.git
+[submodule "vf-proxy-api"]
+	path = vf-proxy-api
+	url = https://github.com/voiceflow-gallagan/vf-proxy-api.git
