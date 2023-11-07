@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow Proxy API**
+    - Description: Proxy API to update variables on client side and use them in the Assistant without leaking your VF API Key. Using Bun and fastify.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-proxy-api)
+
 - **Presidio API | PII Anonymizer**
     - Description: This repository contains a service that exposes an endpoint for anonymizing Personally Identifiable Information (PII). It uses the [Microsoft Presidio](https://github.com/microsoft/presidio/tree/main) project for the anonymization process. The application is built on [Bun](https://bun.sh), a JavaScript runtime that helps to create performant applications.
     - [Repository Link](https://github.com/voiceflow-gallagan/presidio-api)
