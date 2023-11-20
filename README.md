@@ -36,6 +36,10 @@ In this document, you will find a collection of various projects and demos imple
     - Description: An example of integration with WhatsApp, supporting Buttons, Images and Audio Messages.
     - [Repository Link](https://github.com/voiceflow/example-integration-whatsapp)
 
+- **Example Integration MS Teams**
+    - Description: An example of integration with MS Teams.
+    - [Repository Link](https://github.com/voiceflow-gallagan/api-integration-msteams)
+
 - **Langchain Local Knowledgebase**
     - Description: A local knowledge base setup based on LangChain.
     - [Repository Link](https://github.com/voiceflow-gallagan/langchain-local-knowledgebase)
