@@ -49,3 +49,6 @@
 [submodule "vf-proxy-api"]
 	path = vf-proxy-api
 	url = https://github.com/voiceflow-gallagan/vf-proxy-api.git
+[submodule "api-integration-msteams"]
+	path = api-integration-msteams
+	url = https://github.com/voiceflow-gallagan/api-integration-msteams.git
