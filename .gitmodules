@@ -52,3 +52,6 @@
 [submodule "api-integration-msteams"]
 	path = api-integration-msteams
 	url = https://github.com/voiceflow-gallagan/api-integration-msteams.git
+[submodule "vf-twilio-sms-integration"]
+	path = vf-twilio-sms-integration
+	url = https://github.com/voiceflow-gallagan/vf-twilio-sms-integration.git
