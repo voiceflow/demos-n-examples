@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow Twilio SMS Integration**
+    - Description: This project is a Voiceflow Twilio SMS Integration using Docker and Docker Compose. It allows you to interact with the Voiceflow general runtime API via SMS using Twilio.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-twilio-sms-integration)
+
 - **Voiceflow Proxy API**
     - Description: Proxy API to update variables on client side and use them in the Assistant without leaking your VF API Key. Using Bun and fastify.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-proxy-api)
