@@ -55,3 +55,6 @@
 [submodule "vf-twilio-sms-integration"]
 	path = vf-twilio-sms-integration
 	url = https://github.com/voiceflow-gallagan/vf-twilio-sms-integration.git
+[submodule "intercom-vf-integration"]
+	path = intercom-vf-integration
+	url = https://github.com/voiceflow-gallagan/intercom-vf-integration.git
