@@ -58,3 +58,6 @@
 [submodule "intercom-vf-integration"]
 	path = intercom-vf-integration
 	url = https://github.com/voiceflow-gallagan/intercom-vf-integration.git
+[submodule "vf-date-parser"]
+	path = vf-date-parser
+	url = https://github.com/voiceflow-gallagan/vf-date-parser.git
