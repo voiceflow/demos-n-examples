@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow Date Parser API**
+    - Description: API to parse human date like 'tomorrow at 10:00' to ISO 8601 formatted date.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-date-parser)
+
 - **Voiceflow Twilio SMS Integration**
     - Description: This project is a Voiceflow Twilio SMS Integration using Docker and Docker Compose. It allows you to interact with the Voiceflow general runtime API via SMS using Twilio.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-twilio-sms-integration)
