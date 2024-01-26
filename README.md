@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Crawler | KB Uploader**
+    - Description: A modified version of the GPT Crawler (https://github.com/BuilderIO/gpt-crawler) to fetch content from a website, convert it in markdown and upload everything to your Voiceflow agent knowledge base as text.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-crawler-uploader)
+
 - **Voiceflow Date Parser API**
     - Description: API to parse human date like 'tomorrow at 10:00' to ISO 8601 formatted date.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-date-parser)
