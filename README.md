@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Analytics Proxy**
+    - Description: This repository contains a Node.js application that acts as a proxy between a Chat Widget and the Voiceflow Dialog Manager (DM) API. The primary purpose of this proxy is to intercept requests sent from the Chat Widget to the Voiceflow DM API's `/interact` endpoint, allowing for the collection, parsing, and analysis of response traces for analytics purposes.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-analytics-proxy)
+
 - **Crawler | KB Uploader**
     - Description: A modified version of the GPT Crawler (https://github.com/BuilderIO/gpt-crawler) to fetch content from a website, convert it in markdown and upload everything to your Voiceflow agent knowledge base as text.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-crawler-uploader)
