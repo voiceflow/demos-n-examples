@@ -64,3 +64,6 @@
 [submodule "vf-crawler-uploader"]
 	path = vf-crawler-uploader
 	url = https://github.com/voiceflow-gallagan/vf-crawler-uploader.git
+[submodule "vf-analytics-proxy"]
+	path = vf-analytics-proxy
+	url = https://github.com/voiceflow-gallagan/vf-analytics-proxy.git
