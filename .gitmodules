@@ -67,3 +67,6 @@
 [submodule "vf-analytics-proxy"]
 	path = vf-analytics-proxy
 	url = https://github.com/voiceflow-gallagan/vf-analytics-proxy.git
+[submodule "vf-extensions-demo"]
+	path = vf-extensions-demo
+	url = https://github.com/voiceflow-gallagan/vf-extensions-demo.git
