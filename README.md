@@ -3,7 +3,9 @@
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
 ## Repositories
-
+- **Chat Widget Extensions**
+    - Description: This repository contains a demonstration of various chat widget extensions for Voiceflow. The extensions include functionality for video playback, timers, forms, maps, file uploads, date selection, confetti effects, and feedback collection.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-extensions-demo.git)
 - **Analytics Proxy**
     - Description: This repository contains a Node.js application that acts as a proxy between a Chat Widget and the Voiceflow Dialog Manager (DM) API. The primary purpose of this proxy is to intercept requests sent from the Chat Widget to the Voiceflow DM API's `/interact` endpoint, allowing for the collection, parsing, and analysis of response traces for analytics purposes.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-analytics-proxy)
