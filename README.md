@@ -5,7 +5,10 @@ In this document, you will find a collection of various projects and demos imple
 ## Repositories
 - **Chat Widget Extensions**
     - Description: This repository contains a demonstration of various chat widget extensions for Voiceflow. The extensions include functionality for video playback, timers, forms, maps, file uploads, date selection, confetti effects, and feedback collection.
-    - [Repository Link](https://github.com/voiceflow-gallagan/vf-extensions-demo.git)
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-extensions-demo)
+- **KB File Downloader**
+    - Description: This Node.js application allows you to download documents from Voiceflow's API by specifying a document ID. It automatically detects the document's file type and saves it with the appropriate extension.
+    - [Repository Link](https://github.com/voiceflow-gallagan/download-kb-file)
 - **Analytics Proxy**
     - Description: This repository contains a Node.js application that acts as a proxy between a Chat Widget and the Voiceflow Dialog Manager (DM) API. The primary purpose of this proxy is to intercept requests sent from the Chat Widget to the Voiceflow DM API's `/interact` endpoint, allowing for the collection, parsing, and analysis of response traces for analytics purposes.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-analytics-proxy)
