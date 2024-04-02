@@ -3,6 +3,11 @@
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
 ## Repositories
+- **Voiceflow MineFlow**
+    - Description: A Minecraft integration for Voiceflow!
+    Built based off the Python example from Voiceflow's Python API Example.
+    We connect to the Minecraft server's RCON interface to send commands to the server, and monitor the server's log file to get player messages.
+    - [Repository Link](https://github.com/SuperZooper3/Voiceflow-MineFlow)
 - **Chat Widget Extensions**
     - Description: This repository contains a demonstration of various chat widget extensions for Voiceflow. The extensions include functionality for video playback, timers, forms, maps, file uploads, date selection, confetti effects, and feedback collection.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-extensions-demo)
