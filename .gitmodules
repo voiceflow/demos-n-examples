@@ -73,3 +73,6 @@
 [submodule "download-kb-file"]
 	path = download-kb-file
 	url = https://github.com/voiceflow-gallagan/download-kb-file.git
+[submodule "Voiceflow-MineFlow"]
+	path = Voiceflow-MineFlow
+	url = https://github.com/SuperZooper3/Voiceflow-MineFlow.git
