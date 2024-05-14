@@ -3,6 +3,9 @@
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
 ## Repositories
+- **LLMLingua2 | Prompt Compression**
+    - Learn how to leverage Microsoft's LLMLingua2 for efficient prompt compression, enhancing your Voiceflow agent's performance, tokens usage and reducing latency as we also explore integrating latest OpenAI's GPT-4o model with a fallback to GPT-4 Turbo using Cloudflare Al Gateway.
+    - [Repository Link](https://github.com/voiceflow-gallagan/llmlingua-api)
 - **Voiceflow MineFlow**
     - Description: A Minecraft integration for Voiceflow!
     Built based off the Python example from Voiceflow's Python API Example.
