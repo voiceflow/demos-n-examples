@@ -76,3 +76,6 @@
 [submodule "Voiceflow-MineFlow"]
 	path = Voiceflow-MineFlow
 	url = https://github.com/SuperZooper3/Voiceflow-MineFlow.git
+[submodule "llmlingua-api"]
+	path = llmlingua-api
+	url = https://github.com/voiceflow-gallagan/llmlingua-api
