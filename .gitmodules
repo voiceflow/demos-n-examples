@@ -79,3 +79,6 @@
 [submodule "llmlingua-api"]
 	path = llmlingua-api
 	url = https://github.com/voiceflow-gallagan/llmlingua-api
+[submodule "tico-me"]
+	path = tico-me
+	url = https://github.com/voiceflow-gallagan/tico-me.git
