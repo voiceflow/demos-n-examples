@@ -2,7 +2,11 @@
 
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
+
 ## Repositories
+- **EduChat | AI app**
+    - This is an AI app built in React. It enhances learning outcomes and interactivity by following along with students' reading of articles, asking questions, and engaging in conversation.
+    - [Repository Link](https://github.com/SuperZooper3/Voiceflow-EduChat)
 - **Tico Me | Audio to KB**
     - A desktop app example to record audio from your computer, use a whisper endpoint to generate transcripts and upload them to your Agent knowledge base.
     - [Repository Link](https://github.com/voiceflow-gallagan/tico-me)
