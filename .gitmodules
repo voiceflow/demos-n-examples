@@ -82,3 +82,6 @@
 [submodule "tico-me"]
 	path = tico-me
 	url = https://github.com/voiceflow-gallagan/tico-me.git
+[submodule "Voiceflow-EduChat"]
+	path = Voiceflow-EduChat
+	url = https://github.com/SuperZooper3/Voiceflow-EduChat
