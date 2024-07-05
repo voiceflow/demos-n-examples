@@ -4,6 +4,9 @@ In this document, you will find a collection of various projects and demos imple
 
 
 ## Repositories
+- **Voiceflow GameFlow: LLM powered Unity Game**
+    - A Unity game integrating Voiceflow as a custom interface with an LMM powered NPC, that not only can have organic conversatoins, but through agent design can also interract with the game world, by giving or receiving items, changing the game scene, or pulling from a knowledge base of lore.
+    - [Repository Link](https://github.com/SuperZooper3/Voiceflow-GameFlow)
 - **EduChat | AI app**
     - This is an AI app built in React. It enhances learning outcomes and interactivity by following along with students' reading of articles, asking questions, and engaging in conversation.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-EduChat)
