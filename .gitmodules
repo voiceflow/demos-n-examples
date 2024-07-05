@@ -85,3 +85,6 @@
 [submodule "Voiceflow-EduChat"]
 	path = Voiceflow-EduChat
 	url = https://github.com/SuperZooper3/Voiceflow-EduChat
+[submodule "Voiceflow-GameFlow"]
+	path = Voiceflow-GameFlow
+	url = https://github.com/SuperZooper3/Voiceflow-GameFlow.git
