@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 
 ## Repositories
+- **Voiceflow KB Content Export**
+    - A command line tool to export all Voiceflow KB docs content into txt files.
+    A ZIP archive is auto generated with the extracted content.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-kb-content-export)
 - **Voiceflow GameFlow: LLM powered Unity Game**
     - A Unity game integrating Voiceflow as a custom interface with an LMM powered NPC, that not only can have organic conversatoins, but through agent design can also interract with the game world, by giving or receiving items, changing the game scene, or pulling from a knowledge base of lore.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-GameFlow)
