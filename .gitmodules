@@ -88,3 +88,6 @@
 [submodule "Voiceflow-GameFlow"]
 	path = Voiceflow-GameFlow
 	url = https://github.com/SuperZooper3/Voiceflow-GameFlow.git
+[submodule "vf-kb-content-export"]
+	path = vf-kb-content-export
+	url = https://github.com/voiceflow-gallagan/vf-kb-content-export
