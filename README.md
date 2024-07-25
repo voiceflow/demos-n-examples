@@ -4,6 +4,9 @@ In this document, you will find a collection of various projects and demos imple
 
 
 ## Repositories
+- **Voiceflow Chat Widget Domain Checker**
+    - Use a Cloudflare worker and a Javascript Step in your agent to filter allowed domains for your Chat Widget.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-chat-domain-checker)
 - **Voiceflow KB Content Export**
     - A command line tool to export all Voiceflow KB docs content into txt files.
     A ZIP archive is auto generated with the extracted content.
