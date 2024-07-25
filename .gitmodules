@@ -94,3 +94,6 @@
 [submodule "vf-chat-domain-checker"]
 	path = vf-chat-domain-checker
 	url = https://github.com/voiceflow-gallagan/vf-chat-domain-checker
+[submodule "vf-vapi"]
+	path = vf-vapi
+	url = https://github.com/voiceflow-gallagan/vf-vapi
