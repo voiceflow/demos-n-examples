@@ -4,6 +4,9 @@ In this document, you will find a collection of various projects and demos imple
 
 
 ## Repositories
+- **Voiceflow with VAPI Custom LLM**
+    - Use your Voiceflow agent as a VAPI custom llm
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-vapi)
 - **Voiceflow Chat Widget Domain Checker**
     - Use a Cloudflare worker and a Javascript Step in your agent to filter allowed domains for your Chat Widget.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-chat-domain-checker)
