@@ -4,6 +4,9 @@ In this document, you will find a collection of various projects and demos imple
 
 
 ## Repositories
+- **Seat Selector Extension demo**
+    - Extension demo from the JetBlue Developer Lab
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-seatselector-extension-demo)
 - **Voiceflow with VAPI Custom LLM**
     - Use your Voiceflow agent as a VAPI custom llm
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-vapi)
