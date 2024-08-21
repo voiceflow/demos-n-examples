@@ -97,3 +97,6 @@
 [submodule "vf-vapi"]
 	path = vf-vapi
 	url = https://github.com/voiceflow-gallagan/vf-vapi
+[submodule "vf-seatselector-extension-demo"]
+	path = vf-seatselector-extension-demo
+	url = https://github.com/voiceflow-gallagan/vf-seatselector-extension-demo.git
