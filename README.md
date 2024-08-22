@@ -10,6 +10,9 @@ In this document, you will find a collection of various projects and demos imple
 - **Voiceflow with VAPI Custom LLM**
     - Use your Voiceflow agent as a VAPI custom llm
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-vapi)
+- **Goose Guide Bot**
+    - A Voiceflow-powered AI chat agent to help hackers get answers to their questions quickly and accurately! Open sourced as of Hack the North 2024 on Wednesday, August 21st, 2024.
+    - [Repository Link](https://github.com/hackthenorth/goose-guide-bot)
 - **Voiceflow Chat Widget Domain Checker**
     - Use a Cloudflare worker and a Javascript Step in your agent to filter allowed domains for your Chat Widget.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-chat-domain-checker)
