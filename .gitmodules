@@ -100,3 +100,6 @@
 [submodule "vf-seatselector-extension-demo"]
 	path = vf-seatselector-extension-demo
 	url = https://github.com/voiceflow-gallagan/vf-seatselector-extension-demo.git
+[submodule "goose-guide-bot"]
+	path = goose-guide-bot
+	url = https://github.com/hackthenorth/goose-guide-bot.git
