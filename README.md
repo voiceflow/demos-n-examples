@@ -131,6 +131,7 @@ In this document, you will find a collection of various projects and demos imple
     - Description: A demo for chat functionality on a webpage.
     - [Repository Link](https://github.com/voiceflow-gallagan/webpage-chat-demo)
 
+<img src="https://api.swetrix.com/log/noscript?pid=CmgAraxzLROa" alt="" referrerpolicy="no-referrer-when-downgrade" />
 
 <a href="https://trackgit.com">
 <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/ljx5x2q1gqj3c168ceml" alt="trackgit-views" />
