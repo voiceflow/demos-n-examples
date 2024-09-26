@@ -103,3 +103,9 @@
 [submodule "goose-guide-bot"]
 	path = goose-guide-bot
 	url = https://github.com/hackthenorth/goose-guide-bot.git
+[submodule "vf-shopify-demo-extensions"]
+	path = vf-shopify-demo-extensions
+	url = https://github.com/voiceflow-gallagan/vf-shopify-demo-extensions
+[submodule "vf-sitemap-kb-auto-updater"]
+	path = vf-sitemap-kb-auto-updater
+	url = https://github.com/voiceflow-gallagan/vf-sitemap-kb-auto-updater
