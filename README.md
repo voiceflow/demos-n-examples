@@ -4,6 +4,12 @@ In this document, you will find a collection of various projects and demos imple
 
 
 ## Repositories
+- **Shopify Demo | Chat Widget Extensions**
+    - Extensions used in the Shopify demos | Developer Lab & Making Bots
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-shopify-demo-extensions)
+- **Sitemaps KB Auto Uploader**
+    - This project is a sitemap processor that updates a knowledge base using the Voiceflow API. It provides both API endpoints and a scheduled cron job for processing sitemaps. When available, it will use last update info from the sitemaps to check if the doc need to be updated and if there are new documents to add to the knowledge base.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-sitemap-kb-auto-updater)
 - **Seat Selector Extension demo**
     - Extension demo from the JetBlue Developer Lab
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-seatselector-extension-demo)
