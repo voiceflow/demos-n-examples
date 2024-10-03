@@ -2,8 +2,10 @@
 
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
-
 ## Repositories
+- **PDF Content Reader | Chat Widget Extension**
+    - Chat widget extension to allow extracting text from PDFs and sending the content back to the Voiceflow agent.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-pdf-content-reader-extension)
 - **Shopify Demo | Chat Widget Extensions**
     - Extensions used in the Shopify demos | Developer Lab & Making Bots
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-shopify-demo-extensions)
