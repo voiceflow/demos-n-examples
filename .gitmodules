@@ -109,3 +109,6 @@
 [submodule "vf-sitemap-kb-auto-updater"]
 	path = vf-sitemap-kb-auto-updater
 	url = https://github.com/voiceflow-gallagan/vf-sitemap-kb-auto-updater
+[submodule "vf-pdf-content-reader-extension"]
+	path = vf-pdf-content-reader-extension
+	url = https://github.com/voiceflow-gallagan/vf-pdf-content-reader-extension
