@@ -118,3 +118,6 @@
 [submodule "vf-transcripts-csv-export"]
 	path = vf-transcripts-csv-export
 	url = https://github.com/voiceflow-gallagan/vf-transcripts-csv-export
+[submodule "vf-spacy-pii-redac"]
+	path = vf-spacy-pii-redac
+	url = https://github.com/voiceflow-gallagan/vf-spacy-pii-redac
