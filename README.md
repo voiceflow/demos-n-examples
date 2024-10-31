@@ -3,54 +3,74 @@
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
 ## Repositories
+
+- **Voiceflow Transcripts CSV Exporter**
+    - This project is a parser/csv exporter for Voiceflow agent transcripts, designed to fetch and process transcripts data using the Voiceflow Transcripts API.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-transcripts-csv-export)
+
 - **PDF Content Reader | Chat Widget Extension**
     - Chat widget extension to allow extracting text from PDFs and sending the content back to the Voiceflow agent.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-pdf-content-reader-extension)
+
 - **Shopify Demo | Chat Widget Extensions**
     - Extensions used in the Shopify demos | Developer Lab & Making Bots
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-shopify-demo-extensions)
+
 - **Sitemaps KB Auto Uploader**
     - This project is a sitemap processor that updates a knowledge base using the Voiceflow API. It provides both API endpoints and a scheduled cron job for processing sitemaps. When available, it will use last update info from the sitemaps to check if the doc need to be updated and if there are new documents to add to the knowledge base.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-sitemap-kb-auto-updater)
+
 - **Seat Selector Extension demo**
     - Extension demo from the JetBlue Developer Lab
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-seatselector-extension-demo)
+
 - **Voiceflow with VAPI Custom LLM**
     - Use your Voiceflow agent as a VAPI custom llm
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-vapi)
+
 - **Goose Guide Bot**
     - A Voiceflow-powered AI chat agent to help hackers get answers to their questions quickly and accurately! Open sourced as of Hack the North 2024 on Wednesday, August 21st, 2024.
     - [Repository Link](https://github.com/hackthenorth/goose-guide-bot)
+
 - **Voiceflow Chat Widget Domain Checker**
     - Use a Cloudflare worker and a Javascript Step in your agent to filter allowed domains for your Chat Widget.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-chat-domain-checker)
+
 - **Voiceflow KB Content Export**
     - A command line tool to export all Voiceflow KB docs content into txt files.
     A ZIP archive is auto generated with the extracted content.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-kb-content-export)
+
 - **Voiceflow GameFlow: LLM powered Unity Game**
     - A Unity game integrating Voiceflow as a custom interface with an LMM powered NPC, that not only can have organic conversatoins, but through agent design can also interract with the game world, by giving or receiving items, changing the game scene, or pulling from a knowledge base of lore.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-GameFlow)
+
 - **EduChat | AI app**
     - This is an AI app built in React. It enhances learning outcomes and interactivity by following along with students' reading of articles, asking questions, and engaging in conversation.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-EduChat)
+
 - **Tico Me | Audio to KB**
     - A desktop app example to record audio from your computer, use a whisper endpoint to generate transcripts and upload them to your Agent knowledge base.
     - [Repository Link](https://github.com/voiceflow-gallagan/tico-me)
+
 - **LLMLingua2 | Prompt Compression**
     - Learn how to leverage Microsoft's LLMLingua2 for efficient prompt compression, enhancing your Voiceflow agent's performance, tokens usage and reducing latency as we also explore integrating latest OpenAI's GPT-4o model with a fallback to GPT-4 Turbo using Cloudflare Al Gateway.
     - [Repository Link](https://github.com/voiceflow-gallagan/llmlingua-api)
+
 - **Voiceflow MineFlow**
     - Description: A Minecraft integration for Voiceflow!
     Built based off the Python example from Voiceflow's Python API Example.
     We connect to the Minecraft server's RCON interface to send commands to the server, and monitor the server's log file to get player messages.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-MineFlow)
+
 - **Chat Widget Extensions**
     - Description: This repository contains a demonstration of various chat widget extensions for Voiceflow. The extensions include functionality for video playback, timers, forms, maps, file uploads, date selection, confetti effects, and feedback collection.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-extensions-demo)
+
 - **KB File Downloader**
     - Description: This Node.js application allows you to download documents from Voiceflow's API by specifying a document ID. It automatically detects the document's file type and saves it with the appropriate extension.
     - [Repository Link](https://github.com/voiceflow-gallagan/download-kb-file)
+
 - **Analytics Proxy**
     - Description: This repository contains a Node.js application that acts as a proxy between a Chat Widget and the Voiceflow Dialog Manager (DM) API. The primary purpose of this proxy is to intercept requests sent from the Chat Widget to the Voiceflow DM API's `/interact` endpoint, allowing for the collection, parsing, and analysis of response traces for analytics purposes.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-analytics-proxy)
@@ -66,6 +86,12 @@ In this document, you will find a collection of various projects and demos imple
 - **Voiceflow Twilio SMS Integration**
     - Description: This project is a Voiceflow Twilio SMS Integration using Docker and Docker Compose. It allows you to interact with the Voiceflow general runtime API via SMS using Twilio.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-twilio-sms-integration)
+
+- **Voiceflow Twilio SMS Integration | Dev Labs Real Estate DEMO**
+    - Description: This project is a Voiceflow Twilio SMS Integration to listen for webhook from Twilio and/or send direct SMS to a phone number.
+    It allows you to interact with the Voiceflow general runtime API via SMS using Twilio.
+    You can run it using Docker and Docker Compose or locally using Bun.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-twilio-sms-realestate)
 
 - **Voiceflow Proxy API**
     - Description: Proxy API to update variables on client side and use them in the Assistant without leaking your VF API Key. Using Bun and fastify.
