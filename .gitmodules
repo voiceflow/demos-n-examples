@@ -112,3 +112,6 @@
 [submodule "vf-pdf-content-reader-extension"]
 	path = vf-pdf-content-reader-extension
 	url = https://github.com/voiceflow-gallagan/vf-pdf-content-reader-extension
+[submodule "vf-twilio-sms-realestate"]
+	path = vf-twilio-sms-realestate
+	url = https://github.com/voiceflow-gallagan/vf-twilio-sms-realestate
