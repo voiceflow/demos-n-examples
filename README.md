@@ -8,6 +8,10 @@ In this document, you will find a collection of various projects and demos imple
     - This project is a parser/csv exporter for Voiceflow agent transcripts, designed to fetch and process transcripts data using the Voiceflow Transcripts API.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-transcripts-csv-export)
 
+- **Spacy PII redac service**
+    - A Flask-based API service that uses SpaCy's Named Entity Recognition (NER) to identify and redact Personally Identifiable Information (PII) from text.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-spacy-pii-redac)
+
 - **PDF Content Reader | Chat Widget Extension**
     - Chat widget extension to allow extracting text from PDFs and sending the content back to the Voiceflow agent.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-pdf-content-reader-extension)
