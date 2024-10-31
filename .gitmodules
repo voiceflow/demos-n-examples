@@ -115,3 +115,6 @@
 [submodule "vf-twilio-sms-realestate"]
 	path = vf-twilio-sms-realestate
 	url = https://github.com/voiceflow-gallagan/vf-twilio-sms-realestate
+[submodule "vf-transcripts-csv-export"]
+	path = vf-transcripts-csv-export
+	url = https://github.com/voiceflow-gallagan/vf-transcripts-csv-export
