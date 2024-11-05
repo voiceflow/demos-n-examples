@@ -121,3 +121,6 @@
 [submodule "vf-spacy-pii-redac"]
 	path = vf-spacy-pii-redac
 	url = https://github.com/voiceflow-gallagan/vf-spacy-pii-redac
+[submodule "vf-phoenix-integration"]
+	path = vf-phoenix-integration
+	url = https://github.com/voiceflow-gallagan/vf-phoenix-integration
