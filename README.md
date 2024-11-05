@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow Phoenix Integration**
+    - This example shows how to use [@arizeai/openinference](https://github.com/Arize-ai/openinference/tree/main) to instrument a Voiceflow agent.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-phoenix-integration)
+
 - **Voiceflow Transcripts CSV Exporter**
     - This project is a parser/csv exporter for Voiceflow agent transcripts, designed to fetch and process transcripts data using the Voiceflow Transcripts API.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-transcripts-csv-export)
