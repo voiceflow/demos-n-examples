@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow Voice Outbound Demo**
+    - This service enables outbound voice calls using Twilio and Voiceflow Voice feature, with advanced call handling features including answering machine detection, call status tracking, and seamless integration with Voiceflow's conversational AI.
+    - [Repository Link](https://github.com/voiceflow-gallagan/vf-voice-outbound)
+
 - **Voiceflow Phoenix Integration**
     - This example shows how to use [@arizeai/openinference](https://github.com/Arize-ai/openinference/tree/main) to instrument a Voiceflow agent.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-phoenix-integration)
