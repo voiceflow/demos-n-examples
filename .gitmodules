@@ -124,3 +124,6 @@
 [submodule "vf-phoenix-integration"]
 	path = vf-phoenix-integration
 	url = https://github.com/voiceflow-gallagan/vf-phoenix-integration
+[submodule "vf-voice-outbound"]
+	path = vf-voice-outbound
+	url = https://github.com/voiceflow-gallagan/vf-voice-outbound.git
