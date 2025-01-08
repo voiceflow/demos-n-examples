@@ -127,3 +127,6 @@
 [submodule "vf-voice-outbound"]
 	path = vf-voice-outbound
 	url = https://github.com/voiceflow-gallagan/vf-voice-outbound.git
+[submodule "voiceflow-form-extension-demo"]
+	path = voiceflow-form-extension-demo
+	url = https://github.com/voiceflow-gallagan/voiceflow-form-extension-demo.git
