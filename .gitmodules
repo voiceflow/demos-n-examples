@@ -130,3 +130,6 @@
 [submodule "voiceflow-form-extension-demo"]
 	path = voiceflow-form-extension-demo
 	url = https://github.com/voiceflow-gallagan/voiceflow-form-extension-demo.git
+[submodule "top-questions"]
+	path = top-questions
+	url = https://github.com/voiceflow-gallagan/top-questions
