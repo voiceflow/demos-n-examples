@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Top Questions Analyzer**
+    - A tool to analyze and cluster the most frequently asked questions from your Voiceflow assistant's transcripts. It uses Natural to extract questions and GPT-4o to intelligently group similar questions and provide a top questions report.
+    - [Repository Link](https://github.com/voiceflow-gallagan/top-questions)
+
 - **Voiceflow Form Extension Demo**
     - This repository demonstrates a custom implementation of the Voiceflow Chat Widget with form-based extensions. The demo showcases a Renault 5 test drive booking experience.
     - [Repository Link](https://github.com/voiceflow-gallagan/voiceflow-form-extension-demo)
