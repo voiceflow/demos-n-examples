@@ -133,3 +133,6 @@
 [submodule "top-questions"]
 	path = top-questions
 	url = https://github.com/voiceflow-gallagan/top-questions
+[submodule "poc-voice-tester"]
+	path = poc-voice-tester
+	url = https://github.com/voiceflow-gallagan/poc-voice-tester.git
