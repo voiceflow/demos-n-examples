@@ -4,10 +4,13 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Call Recorder and PII Redactor**
+    - A real-time call recording and transcription system built with Voiceflow Twilio voice integration, Next.js, and Bun. This application automatically records incoming calls, transcribes and redacts personally identifiable information (PII), and provides a dashboard to manage and review call recordings and transcripts.
+    - [Repository Link](https://github.com/voiceflow-gallagan/poc-twilio-call-recorder)
+
 - **Voice Agent Tester**
     - A web application for testing Voiceflow voice agents through automated test scenarios. This application allows you to create test cases with specific personas and goals, then execute them by making outbound calls to your voice agent.
     - [Repository Link](https://github.com/voiceflow-gallagan/poc-voice-tester)
-
 
 - **Top Questions Analyzer**
     - A tool to analyze and cluster the most frequently asked questions from your Voiceflow assistant's transcripts. It uses Natural to extract questions and GPT-4o to intelligently group similar questions and provide a top questions report.
