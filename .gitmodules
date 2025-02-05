@@ -136,3 +136,6 @@
 [submodule "poc-voice-tester"]
 	path = poc-voice-tester
 	url = https://github.com/voiceflow-gallagan/poc-voice-tester.git
+[submodule "poc-twilio-call-recorder"]
+	path = poc-twilio-call-recorder
+	url = https://github.com/voiceflow-gallagan/poc-twilio-call-recorder
