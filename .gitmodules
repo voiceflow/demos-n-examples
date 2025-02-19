@@ -139,3 +139,6 @@
 [submodule "poc-twilio-call-recorder"]
 	path = poc-twilio-call-recorder
 	url = https://github.com/voiceflow-gallagan/poc-twilio-call-recorder
+[submodule "voiceflow-perplexity-reasoning-extension"]
+	path = voiceflow-perplexity-reasoning-extension
+	url = https://github.com/voiceflow-gallagan/voiceflow-perplexity-reasoning-extension.git
