@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow Perplexity Reasoning Extension**
+    - Integrate Perplexity AI's reasoning capabilities into your Voiceflow widget for step-by-step reasoning and professional responses.
+    - [Repository Link](https://github.com/voiceflow-gallagan/voiceflow-perplexity-reasoning-extension)
+
 - **Call Recorder and PII Redactor**
     - A real-time call recording and transcription system built with Voiceflow Twilio voice integration, Next.js, and Bun. This application automatically records incoming calls, transcribes and redacts personally identifiable information (PII), and provides a dashboard to manage and review call recordings and transcripts.
     - [Repository Link](https://github.com/voiceflow-gallagan/poc-twilio-call-recorder)
