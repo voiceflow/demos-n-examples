@@ -142,3 +142,6 @@
 [submodule "voiceflow-perplexity-reasoning-extension"]
 	path = voiceflow-perplexity-reasoning-extension
 	url = https://github.com/voiceflow-gallagan/voiceflow-perplexity-reasoning-extension.git
+[submodule "answers-user-feedback"]
+	path = answers-user-feedback
+	url = https://github.com/voiceflow-gallagan/answers-user-feedback
