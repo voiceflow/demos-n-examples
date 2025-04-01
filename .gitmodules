@@ -145,3 +145,6 @@
 [submodule "answers-user-feedback"]
 	path = answers-user-feedback
 	url = https://github.com/voiceflow-gallagan/answers-user-feedback
+[submodule "voiceflow-mcp-server-client"]
+	path = voiceflow-mcp-server-client
+	url = https://github.com/voiceflow-gallagan/voiceflow-mcp-server-client
