@@ -148,3 +148,6 @@
 [submodule "voiceflow-mcp-server-client"]
 	path = voiceflow-mcp-server-client
 	url = https://github.com/voiceflow-gallagan/voiceflow-mcp-server-client
+[submodule "voice-call-timer"]
+	path = voice-call-timer
+	url = https://github.com/voiceflow-gallagan/voice-call-timer
