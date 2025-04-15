@@ -151,3 +151,6 @@
 [submodule "voice-call-timer"]
 	path = voice-call-timer
 	url = https://github.com/voiceflow-gallagan/voice-call-timer
+[submodule "Voiceflow-KB-MCP"]
+	path = Voiceflow-KB-MCP
+	url = https://github.com/voiceflow-gallagan/Voiceflow-KB-MCP
