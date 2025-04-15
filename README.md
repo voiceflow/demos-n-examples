@@ -4,6 +4,11 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Voiceflow KB Query MCP Server**
+    - A Node.js server that provides access to the Voiceflow Knowledge Base Query API using the Model Context Protocol (MCP).
+    - [Repository Link](https://github.com/voiceflow-gallagan/Voiceflow-KB-MCP)
+
+
 - **Voice Call Timer**
     - A Node.js service that monitors Voiceflow voice calls and automatically ends them based on custom time limits. Perfect for implementing usage limits based on user subscription tiers or managing call durations within your Voiceflow assistant.
     - [Repository Link](https://github.com/voiceflow-gallagan/voice-call-timer)
