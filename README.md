@@ -4,6 +4,10 @@ In this document, you will find a collection of various projects and demos imple
 
 ## Repositories
 
+- **Tico Nano UDP Audio server**
+    - A demo server for an integration with Voiceflow and M5Stack Echo Nano and Core2 devices that enables real-time voice interactions with Voiceflow Dialog Manager. It receives raw PCM audio over UDP, transcribes speech using Whisper (with support for both local and Groq cloud-based transcription), processes the text through Voiceflow's Dialog Manager, and returns TTS audio responses. The demo server can be deployed either with a local Whisper ASR service or using Groq's cloud-based transcription API for improved performance.
+    - [Repository Link](https://github.com/voiceflow-gallagan/tico-nano-udp-audio-server)
+
 - **Voiceflow KB Query MCP Server**
     - A Node.js server that provides access to the Voiceflow Knowledge Base Query API using the Model Context Protocol (MCP).
     - [Repository Link](https://github.com/voiceflow-gallagan/Voiceflow-KB-MCP)
