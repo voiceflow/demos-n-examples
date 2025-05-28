@@ -1,7 +1,6 @@
 # Voiceflow demos-n-examples
 
-Repositories Overview
-In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
+In this repository, you will find a collection of various projects and demos implemented under the Voiceflow team.
 
 ## Repositories
 
