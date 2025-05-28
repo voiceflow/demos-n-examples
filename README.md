@@ -1,5 +1,6 @@
-# Voiceflow demos-n-examples | Repositories Overview
+# Voiceflow demos-n-examples
 
+Repositories Overview
 In this document, you will find a collection of various projects and demos implemented under the Voiceflow team. Each project link is associated with a specific commit.
 
 ## Repositories
@@ -141,7 +142,7 @@ In this document, you will find a collection of various projects and demos imple
     - This project is a Voiceflow Twilio SMS Integration using Docker and Docker Compose. It allows you to interact with the Voiceflow general runtime API via SMS using Twilio.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-twilio-sms-integration)
 
-- **Voiceflow Twilio SMS Integration | Dev Labs Real Estate DEMO**
+- **Voiceflow Twilio SMS Integration - Dev Labs Real Estate DEMO**
     - This project is a Voiceflow Twilio SMS Integration to listen for webhook from Twilio and/or send direct SMS to a phone number.
     It allows you to interact with the Voiceflow general runtime API via SMS using Twilio.
     You can run it using Docker and Docker Compose or locally using Bun.
