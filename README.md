@@ -22,7 +22,7 @@ In this document, you will find a collection of various projects and demos imple
     - A Node.js client for the Model Context Protocol (MCP) that integrates with remote MCP servers to provide tools for your Voiceflow Agent.
     - [Repository Link](https://github.com/voiceflow-gallagan/voiceflow-mcp-server-client)
 
-- **Answers | User Feedback with transcripts**
+- **Answers - User Feedback with transcripts**
     - A feedback collection and visualization system demo for Voiceflow conversations. This application allows you to gather, store, and display user feedback from your Voiceflow widget interactions, providing valuable insights into user satisfaction and conversation quality.
     - [Repository Link](https://github.com/voiceflow-gallagan/answers-user-feedback)
 
@@ -62,12 +62,12 @@ In this document, you will find a collection of various projects and demos imple
     - A Flask-based API service that uses SpaCy's Named Entity Recognition (NER) to identify and redact Personally Identifiable Information (PII) from text.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-spacy-pii-redac)
 
-- **PDF Content Reader | Chat Widget Extension**
+- **PDF Content Reader - Chat Widget Extension**
     - Chat widget extension to allow extracting text from PDFs and sending the content back to the Voiceflow agent.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-pdf-content-reader-extension)
 
-- **Shopify Demo | Chat Widget Extensions**
-    - Extensions used in the Shopify demos | Developer Lab & Making Bots
+- **Shopify Demo - Chat Widget Extensions**
+    - Extensions used in the Shopify demos from Developer Lab & Making Bots
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-shopify-demo-extensions)
 
 - **Sitemaps KB Auto Uploader**
@@ -99,15 +99,15 @@ In this document, you will find a collection of various projects and demos imple
     - A Unity game integrating Voiceflow as a custom interface with an LMM powered NPC, that not only can have organic conversatoins, but through agent design can also interract with the game world, by giving or receiving items, changing the game scene, or pulling from a knowledge base of lore.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-GameFlow)
 
-- **EduChat | AI app**
+- **EduChat - AI app**
     - This is an AI app built in React. It enhances learning outcomes and interactivity by following along with students' reading of articles, asking questions, and engaging in conversation.
     - [Repository Link](https://github.com/SuperZooper3/Voiceflow-EduChat)
 
-- **Tico Me | Audio to KB**
+- **Tico Me - Audio to KB**
     - A desktop app example to record audio from your computer, use a whisper endpoint to generate transcripts and upload them to your Agent knowledge base.
     - [Repository Link](https://github.com/voiceflow-gallagan/tico-me)
 
-- **LLMLingua2 | Prompt Compression**
+- **LLMLingua2 - Prompt Compression**
     - Learn how to leverage Microsoft's LLMLingua2 for efficient prompt compression, enhancing your Voiceflow agent's performance, tokens usage and reducing latency as we also explore integrating latest OpenAI's GPT-4o model with a fallback to GPT-4 Turbo using Cloudflare Al Gateway.
     - [Repository Link](https://github.com/voiceflow-gallagan/llmlingua-api)
 
@@ -129,7 +129,7 @@ In this document, you will find a collection of various projects and demos imple
     - This repository contains a Node.js application that acts as a proxy between a Chat Widget and the Voiceflow Dialog Manager (DM) API. The primary purpose of this proxy is to intercept requests sent from the Chat Widget to the Voiceflow DM API's `/interact` endpoint, allowing for the collection, parsing, and analysis of response traces for analytics purposes.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-analytics-proxy)
 
-- **Crawler | KB Uploader**
+- **Crawler - KB Uploader**
     - A modified version of the GPT Crawler (https://github.com/BuilderIO/gpt-crawler) to fetch content from a website, convert it in markdown and upload everything to your Voiceflow agent knowledge base as text.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-crawler-uploader)
 
@@ -151,11 +151,11 @@ In this document, you will find a collection of various projects and demos imple
     - Proxy API to update variables on client side and use them in the Assistant without leaking your VF API Key. Using Bun and fastify.
     - [Repository Link](https://github.com/voiceflow-gallagan/vf-proxy-api)
 
-- **Presidio API | PII Anonymizer**
+- **Presidio API - PII Anonymizer**
     - This repository contains a service that exposes an endpoint for anonymizing Personally Identifiable Information (PII). It uses the [Microsoft Presidio](https://github.com/microsoft/presidio/tree/main) project for the anonymization process. The application is built on [Bun](https://bun.sh), a JavaScript runtime that helps to create performant applications.
     - [Repository Link](https://github.com/voiceflow-gallagan/presidio-api)
 
-- **Spotlight Demo | Electron App**
+- **Spotlight Demo - Electron App**
     - This repository contains a sample code for an Electron app that uses Voiceflow Dialog API to interact with your Voiceflow Assistant and return a markdown formated response with some animation.
     - [Repository Link](https://github.com/voiceflow-gallagan/vfassistant-electron)
 
