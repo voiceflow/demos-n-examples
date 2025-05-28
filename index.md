@@ -6,13 +6,15 @@ title: ""              # blank so Jekyll doesn’t print a page title
 <style>
   /* —— Hide whatever header your theme is shoving up there —— */
   h1:first-of-type { display: none !important; }
-
+  html, body {
+    background-color: #1F2529 !important;
+  }
   /* —— Page styling —— */
   body {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background: #121212;
+    background: #1F2529;
     color: #e0e0e0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.7;
