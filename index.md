@@ -1,10 +1,9 @@
 ---
 layout: default
-title: ""
+title: Voiceflow demos-n-examples
 ---
 
 <style>
-  /* —— Dark-mode & spacing tweaks —— */
   body {
     max-width: 800px;
     margin: 0 auto;
@@ -33,14 +32,12 @@ title: ""
     color: #bbb;
     margin: 1.5rem 0;
   }
-  /* hide the auto <h1> */
   .page-header { display: none !important; }
-
-  /* spacing between each repo bullet */
+  
   ul.repo-list > li {
     margin: 1.5rem 0;
   }
-  /* bump indent on the nested text */
+  
   ul.repo-list li ul {
     margin-top: .5rem;
     margin-left: 1.2rem;
@@ -49,6 +46,6 @@ title: ""
 
 # Voiceflow demos-n-examples | Repositories Overview
 
-<ul class="repo-list">
+<ul class='repo-list'>
 {% include_relative README.md %}
 </ul>
