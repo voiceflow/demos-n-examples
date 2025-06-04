@@ -220,7 +220,6 @@ In this repository, you will find a collection of various projects and demos imp
     - [Repository Link](https://github.com/voiceflow-gallagan/webpage-chat-demo)
 
 
-![](https://api.swetrix.com/log/noscript?pid=CmgAraxzLROa)
 <a href="https://trackgit.com">
 <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/ljx5x2q1gqj3c168ceml" alt="trackgit-views" />
 </a>
