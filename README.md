@@ -3,11 +3,11 @@
 In this repository, you will find a collection of various projects and demos implemented under the Voiceflow team.
 
 ## Repositories
-https://github.com/voiceflow-gallagan/tico-zendesk-demo
+
 - **Tico Zendesk Email Demo**
     - This project demonstrates how to integrate Zendesk and Voiceflow using webhooks and conversational AI agents. It uses Zendesk webhooks to trigger events in a Voiceflow project whenever a ticket is created or updated. The Voiceflow agent then analyzes the ticket, leverages its knowledge base, and automatically replies to the user's email with a helpful response. This setup enables automated, intelligent support workflows between Zendesk and Voiceflow.
-
 You can choose between two integration options provided in this repository:
+
 - **Cloudflare Worker**: A serverless function to handle Zendesk webhook events and forward them to Voiceflow.
 - **n8n Workflow**: A no-code/low-code automation workflow for connecting Zendesk and Voiceflow visually.
     - [Repository Link](https://github.com/voiceflow-gallagan/tico-zendesk-demo)
